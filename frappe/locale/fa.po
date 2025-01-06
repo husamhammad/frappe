@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: frappe\n"
 "Report-Msgid-Bugs-To: developers@frappe.io\n"
 "POT-Creation-Date: 2024-12-29 17:34+0000\n"
-"PO-Revision-Date: 2025-01-01 22:16\n"
+"PO-Revision-Date: 2025-01-06 22:25\n"
 "Last-Translator: developers@frappe.io\n"
 "Language-Team: Persian\n"
 "MIME-Version: 1.0\n"
@@ -783,7 +783,7 @@ msgstr "حدود {0} ثانیه باقی مانده است"
 #. Label of a Section Break field in DocType 'Web Form'
 #: frappe/website/doctype/web_form/web_form.json
 msgid "Access Control"
-msgstr ""
+msgstr "کنترل دسترسی"
 
 #. Label of a Data field in DocType 'S3 Backup Settings'
 #: frappe/integrations/doctype/s3_backup_settings/s3_backup_settings.json
@@ -1157,7 +1157,7 @@ msgstr "اضافه کردن الگو"
 #. Label of a Check field in DocType 'Report'
 #: frappe/core/doctype/report/report.json
 msgid "Add Total Row"
-msgstr "کل ردیف را اضافه کنید"
+msgstr "افزودن ردیف کل"
 
 #. Label of a Check field in DocType 'Email Queue'
 #: frappe/email/doctype/email_queue/email_queue.json
@@ -2505,7 +2505,7 @@ msgstr "حداقل یک فیلد در جدول فیلدهای فرم وب اجب
 
 #: frappe/core/doctype/data_export/data_export.js:44
 msgid "Atleast one field of Parent Document Type is mandatory"
-msgstr ""
+msgstr "حداقل یک فیلد از نوع سند والد اجباری است"
 
 #. Option for the 'Type' (Select) field in DocType 'DocField'
 #. Option for the 'Field Type' (Select) field in DocType 'Custom Field'
@@ -3169,7 +3169,7 @@ msgstr "بنر در بالای نوار منوی بالا قرار دارد."
 #. Option for the 'Type' (Select) field in DocType 'Dashboard Chart'
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.json
 msgid "Bar"
-msgstr "بار"
+msgstr "میله"
 
 #. Option for the 'Type' (Select) field in DocType 'DocField'
 #. Option for the 'Field Type' (Select) field in DocType 'Custom Field'
@@ -3406,7 +3406,7 @@ msgstr "وبلاگ نویس"
 #. Subtitle of the Module Onboarding 'Website'
 #: frappe/website/module_onboarding/website/website.json
 msgid "Blogs, Website View Tracking, and more."
-msgstr ""
+msgstr "وبلاگ ها، ردیابی مشاهده وب سایت و موارد دیگر."
 
 #. Option for the 'Color' (Select) field in DocType 'DocType State'
 #. Option for the 'Indicator' (Select) field in DocType 'Kanban Board Column'
@@ -6608,12 +6608,12 @@ msgstr "ارسال پیش فرض و صندوق ورودی"
 #. Label of a Data field in DocType 'DocType'
 #: frappe/core/doctype/doctype/doctype.json
 msgid "Default Sort Field"
-msgstr "فیلد مرتب سازی پیش فرض"
+msgstr "فیلد مرتب‌سازی پیش فرض"
 
 #. Label of a Select field in DocType 'DocType'
 #: frappe/core/doctype/doctype/doctype.json
 msgid "Default Sort Order"
-msgstr "ترتیب مرتب سازی پیش فرض"
+msgstr "ترتیب مرتب‌سازی پیش فرض"
 
 #. Label of a Data field in DocType 'Print Format Field Template'
 #: frappe/printing/doctype/print_format_field_template/print_format_field_template.json
@@ -18399,7 +18399,7 @@ msgstr "ستون ها را انتخاب کنید"
 #. Option for the 'Type' (Select) field in DocType 'Dashboard Chart'
 #: frappe/desk/doctype/dashboard_chart/dashboard_chart.json
 msgid "Pie"
-msgstr "پای"
+msgstr "دایره"
 
 #. Label of a Data field in DocType 'Contact Us Settings'
 #: frappe/website/doctype/contact_us_settings/contact_us_settings.json
@@ -20985,7 +20985,7 @@ msgstr ""
 
 #: frappe/public/js/frappe/utils/datatable.js:8
 msgid "Reset sorting"
-msgstr "مرتب سازی را بازنشانی کنید"
+msgstr "بازنشانی مرتب‌سازی"
 
 #: frappe/www/me.html:36
 msgid "Reset the password for your account"
@@ -20997,7 +20997,7 @@ msgstr "بازنشانی به حالت پیش فرض"
 
 #: frappe/core/doctype/role_permission_for_page_and_report/role_permission_for_page_and_report.js:19
 msgid "Reset to defaults"
-msgstr "به حالت پیش فرض بازنشانی کنید"
+msgstr "بازنشانی به حالت پیش فرض"
 
 #: frappe/templates/emails/password_reset.html:3
 msgid "Reset your password"
@@ -23779,16 +23779,16 @@ msgstr "متاسف! شما مجاز به مشاهده این صفحه نیستی
 
 #: frappe/public/js/frappe/utils/datatable.js:6
 msgid "Sort Ascending"
-msgstr "مرتب سازی صعودی"
+msgstr "مرتب‌سازی صعودی"
 
 #: frappe/public/js/frappe/utils/datatable.js:7
 msgid "Sort Descending"
-msgstr "مرتب سازی نزولی"
+msgstr "مرتب‌سازی نزولی"
 
 #. Label of a Select field in DocType 'Customize Form'
 #: frappe/custom/doctype/customize_form/customize_form.json
 msgid "Sort Field"
-msgstr "فیلد مرتب سازی"
+msgstr "فیلد مرتب‌سازی"
 
 #. Label of a Check field in DocType 'DocField'
 #. Label of a Check field in DocType 'Custom Field'
@@ -23797,16 +23797,16 @@ msgstr "فیلد مرتب سازی"
 #: frappe/custom/doctype/custom_field/custom_field.json
 #: frappe/custom/doctype/customize_form_field/customize_form_field.json
 msgid "Sort Options"
-msgstr "گزینه های مرتب سازی"
+msgstr "گزینه های مرتب‌سازی"
 
 #. Label of a Select field in DocType 'Customize Form'
 #: frappe/custom/doctype/customize_form/customize_form.json
 msgid "Sort Order"
-msgstr "ترتیب مرتب سازی"
+msgstr "ترتیب مرتب‌سازی"
 
 #: frappe/core/doctype/doctype/doctype.py:1512
 msgid "Sort field {0} must be a valid fieldname"
-msgstr "فیلد مرتب سازی {0} باید یک نام فیلد معتبر باشد"
+msgstr "فیلد مرتب‌سازی {0} باید یک نام فیلد معتبر باشد"
 
 #. Label of a Data field in DocType 'Web Page View'
 #. Label of a Small Text field in DocType 'Website Route Redirect'

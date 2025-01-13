@@ -747,3 +747,52 @@ class TestPermissions(FrappeTestCase):
 
 		with self.set_user("test@example.com"):
 			self.assertNotIn(doctype, get_doctypes_with_read())
+
+	def test_create_new_document_with_user_permission(self):
+		frappe.set_user("Administrator")
+		
+		user = "test3@example.com"
+		user_doc = frappe.get_doc("User", user)
+		
+		if not frappe.db.exists("Custom DocPerm", {"role": "Blogger", "parent": "ToDo"}):
+			add_permission("ToDo", "Blogger")
+			update_permission_property("ToDo", "Blogger", 0, "create", 1)
+		
+		user_doc.add_roles("Blogger")
+
+		existing_todo = frappe.get_doc({
+			"doctype": "ToDo",
+			"description": "Existing ToDo for permission",
+		}).insert()
+
+		add_user_permission("ToDo", existing_todo.name, user)
+
+		frappe.set_user(user)
+
+		new_todo = frappe.get_doc({
+			"doctype": "ToDo",
+			"description": "New ToDo created by user",
+		})
+
+		try:
+			new_todo.insert()
+			self.assertTrue(True, "User was allowed to create a new document.")
+		except frappe.PermissionError:
+			self.fail("User was not allowed to create a new document despite having the appropriate role and permission.")
+
+		unrelated_todo = frappe.get_doc({
+			"doctype": "ToDo",
+			"description": "Unrelated ToDo for testing",
+		}).insert(ignore_permissions=True)
+
+		self.assertFalse(
+			frappe.get_doc("ToDo", unrelated_todo.name).has_permission("read"),
+			"User should not have permission to access unrelated ToDo records."
+		)
+
+		frappe.set_user("Administrator")
+		clear_user_permissions_for_doctype("ToDo", user)
+		user_doc.remove_roles("Blogger")
+		frappe.delete_doc("ToDo", existing_todo.name)
+		frappe.delete_doc("ToDo", new_todo.name)
+		frappe.delete_doc("ToDo", unrelated_todo.name)
